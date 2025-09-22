@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="java/funciones.js" defer></script>
     <title>Panaderia</title>
 </head>
 
 <body>
     <header>
-        <h1>Panadería Artesanal</h1>
+        <div class="logito">
+            <img src="img/logito.png" alt="logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#Galeria">Galería</a></li>
+                <li><a href="#ubicacion">Ubicacion</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
                 <h2>HARINAS ORGÁNICAS</h2>
                 <p>Cereal nacional y europeo molido en piedra</p>
@@ -31,71 +35,122 @@
             </div>
         </section>
 
-        <!-- Historia -->
-        <section class="historia">
+        <section class="empresa" id="empresa">
             <div class="col">
-                <img src="https://source.unsplash.com/600x400/?bakery" alt="Nuestra panadería">
+                <h2><strong>Nuestra Empresa</strong></h2>
+                <p>
+                    Harinas Orgánicas es una compañía dedicada a la producción y distribución
+                    de harinas naturales y saludables. Nos enfocamos en procesos artesanales,
+                    respetando la tradición y apostando por la innovación para ofrecer productos
+                    de la más alta calidad.
+                </p>
             </div>
             <div class="col">
-                <h2>Nuestra Historia</h2>
-                <p>Somos una panadería artesanal dedicada a crear productos con amor, tradición y los mejores
-                    ingredientes naturales. Nuestro compromiso es llevar a tu mesa el auténtico sabor del pan de masa
-                    madre.</p>
+                <img src="img/empresa.jpg" alt="Nuestra Empresa">
+            </div>
+        </section>
+
+        <!-- Historia -->
+        <section class="historia" id="historia">
+            <div class="col">
+                <img src="img/FT-historiachef.jpg" alt="Nuestra_Historia">
+            </div>
+            <div class="col">
+                <h2><strong>Nuestra Historia</strong></h2>
+                <p>Juanchito decidió entrar a CESDE para estudiar software con la idea de aprender a crear su propio
+                    negocio, al recordar a su abuela horneando pan encontró la motivación para empezar vendiéndolo en el
+                    salón con recetas caseras y lo que aprendía en clase sobre costos y organización, poco a poco sus
+                    compañeros y vecinos se volvieron clientes fieles, lo que le permitió abrir un pequeño punto de
+                    venta cerca de la institución, hasta convertir ese esfuerzo en una panadería estable, hecha de
+                    disciplina, estudio y el recuerdo que lo inspiró desde el inicio.</p>
             </div>
         </section>
 
         <!-- Productos -->
         <section class="productos" id="productos">
-            <h2>Nuestros Productos</h2>
+            <div class="titulodeproducto">
+                <h2>Nuestros Productos</h2>
+            </div>
             <div class="grid">
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?bread" alt="Pan 1">
-                    <h3>Pan de Masa Madre</h3>
-                    <p>Hecho con fermentación natural.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <img src="img/Pasteldevainilla.jpg" alt="Pan 1">
+                    <h3>Pastel vainilla</h3>
+                    <p>Suave, dulce y esponjoso.</p>
+                    <a href="#">Comprar</a>
                 </div>
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?baguette" alt="Pan 2">
+                    <img src="img/baguette francesa.jpg" alt="Pan 2">
                     <h3>Baguette Francesa</h3>
-                    <p>Crusty por fuera, suave por dentro.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <p>Corteza crujiente, alma suave.</p>
+                    <a href="#">Comprar</a>
                 </div>
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?cookies" alt="Pan 3">
+                    <img src="img/galletasartesanales.jpg" alt="Pan 3">
                     <h3>Galletas Artesanales</h3>
-                    <p>Deliciosas y crocantes.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <p>Dulces, crocantes, caseras siempre.</p>
+                    <a href="#">Comprar</a>
                 </div>
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?cake" alt="Pan 4">
+                    <img src="img/Torta Casera.jpg" alt="Pan 4">
                     <h3>Torta Casera</h3>
-                    <p>Perfecta para cada celebración.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <p>Tradición en cada rebanada.</p>
+                    <a href="#">Comprar</a>
                 </div>
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?pastry" alt="Pan 5">
+                    <img src="img/Pastelitos.jpg" alt="Pan 5">
                     <h3>Pastelitos</h3>
-                    <p>Dulces bocados llenos de sabor.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <p>Bocados dulces llenos sabor.</p>
+                    <a href="#">Comprar</a>
                 </div>
                 <div class="producto">
-                    <img src="https://source.unsplash.com/400x300/?croissant" alt="Pan 6">
+                    <img src="img/Croissant.jpg" alt="Pan 6">
                     <h3>Croissant</h3>
-                    <p>Hoja tras hoja de mantequilla.</p>
-                    <a href="https://wa.me/123456789">Comprar</a>
+                    <p>Hojaldre dorado, mantequilla pura.</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="producto">
+                    <img src="img/Pasteldechocolate.jpg" alt="Pan 7">
+                    <h3>pastel chocolate</h3>
+                    <p>Intenso, húmedo y delicioso.</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="producto">
+                    <img src="img/Donas.jpg" alt="Pan 8">
+                    <h3>Donas</h3>
+                    <p>Esponjosas, glaseadas, irresistibles.</p>
+                    <a href="#">Comprar</a>
                 </div>
             </div>
         </section>
 
         <!-- Galería imágenes -->
-        <section class="galeria">
-            <img src="https://source.unsplash.com/600x400/?bread" alt="Galería 1">
-            <img src="https://source.unsplash.com/600x400/?bakery" alt="Galería 2">
-            <img src="https://source.unsplash.com/600x400/?coffee" alt="Galería 3">
+        <section class="galeria" id="Galeria">
+            <h2><Strong>galería</Strong></h2>
+            <div class="imagenes">
+                <img src="img/galeria1.jpg" alt="Galería 1">
+                <img src="img/galeria2.jpg" alt="Galería 2">
+                <img src="img/galeria3.jpg" alt="Galería 3">
+            </div>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h2>Ubicación</h2>
+                <p>Encuéntranos en nuestra sede principal:</p>
+                <p><strong>Calle 123 #45-67, Medellín, Colombia</strong></p>
+
+                <!-- Mapa de Google -->
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.575043191739!2d-75.62369314458013!3d6.277696299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442973f71b22bd%3A0x5f2d97359471ec3e!2sPanader%C3%ADa%20fuente%20clara!5e0!3m2!1ses!2sco!4v1758556267056!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
 
         <!-- Contacto -->
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h2>Contáctanos</h2>
             <form>
                 <input type="text" placeholder="Nombre" required>
@@ -109,7 +164,34 @@
     </main>
 
     <footer>
-        <p>© 2025 Panadería Artesanal - Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Harinas Orgánicas</h2>
+                <p>Cereal nacional y europeo molido en piedra.
+                    Tradición, calidad y sabor en cada producto.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="#"><img src="img/Facebook_logo.png" alt="Facebook"></a>
+                <a href="#"><img src="img/Instagram_logo.jpg" alt="Instagram"></a>
+                <a href="#"><img src="img/Whastapp_logo.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Harinas Orgánicas. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
